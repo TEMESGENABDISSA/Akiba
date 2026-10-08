@@ -1,4 +1,4 @@
-# Akiba Technologies — Software Engineering & Backend Bootcamp
+# Akiba Technologies  Software Engineering & Backend 
 
 > **Batch 01 | Learn • Build • Connect • Grow**
 
