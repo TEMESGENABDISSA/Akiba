@@ -5,6 +5,7 @@
 This assignment focuses on intermediate Python functions, code reusability, input validation, and problem-solving.
 
 ## Tasks
+ task_01_shopping_receipt.py
 
 Complete 10 coding tasks covering:
 
