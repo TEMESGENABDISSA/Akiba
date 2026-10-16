@@ -32,6 +32,7 @@ A menu-driven application for managing products, sales, inventory, and business 
 - Write readable, reusable, and well-organized code.
 - Answer both theory questions in `theory_answers.md`.
 - Test normal, boundary, and invalid inputs.
+ task_02_student_analyzer.py
 
 ## How to Run
 

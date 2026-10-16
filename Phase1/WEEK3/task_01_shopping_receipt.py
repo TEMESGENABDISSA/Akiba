@@ -8,9 +8,8 @@ items = [
 
 def calculate_subtotal(items):
     total = 0
-
     for item in items:
-       
+    
         if item["price"] < 0 or item["quantity"] < 0:
             return "Price or quantity cannot be negative"
        
