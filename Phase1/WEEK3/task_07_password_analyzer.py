@@ -1,6 +1,6 @@
 
 def minimum_length(password, min_length=8):
-    if len(password) < min_length:
+    if len(password) < min_length: 
         return False
     return True
 
@@ -92,3 +92,4 @@ passwords = [
 
 for password in passwords:
     print(analyze_password(password))
+ 
