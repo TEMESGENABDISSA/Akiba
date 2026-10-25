@@ -107,6 +107,7 @@ def generate_summary():
 
     for transaction in transactions:
         print(transaction)
+ 
 
 
 # Main banking program
