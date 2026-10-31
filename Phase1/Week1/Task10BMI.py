@@ -8,4 +8,4 @@ BMI = weight / (height *height)
 # display the result
 print("==============================\nBMI REPORT\n==============================")
 
-print( f" Name:{name}\n Weight:{weight} KG \n height:{height} M \n BMI:{BMI}\n ==============================")
+print( f" Name:{name}\n Weight:{weight} KG \n height:{height} M \n BMI:{BMI:.2f}\n ==============================")
