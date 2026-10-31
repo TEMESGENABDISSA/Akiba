@@ -22,3 +22,32 @@ student3 = Student("Daniel", 19, "Information Systems")
 student1.display_info()
 student2.display_info()
 student3.display_info()
+
+
+
+
+# Task 2: Rectangle Calculator
+
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+# Create rectangles
+rect1 = Rectangle(10, 5)
+rect2 = Rectangle(7, 3)
+# Show the area and perimeter of each rectangle
+print("Rectangle 1")
+print("Area:", rect1.area())
+print("Perimeter:", rect1.perimeter())
+print()
+
+print("Rectangle 2")
+print("Area", rect2.area())
+print("Perimeter", rect2.perimeter())
