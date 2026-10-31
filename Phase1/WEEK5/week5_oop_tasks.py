@@ -7,9 +7,9 @@ class Student:
         self.department = department
 
     def display_info(self):
-        print("Name:", self.name)
-        print("Age:", self.age)
-        print("Department:", self.department)
+        print("Name", self.name)
+        print("Age", self.age)
+        print("Department", self.department)
         print()
 
 
