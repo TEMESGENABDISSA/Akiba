@@ -55,11 +55,11 @@ print("Perimeter", rect2.perimeter())
 #  Student Score Management
 
 class Student:
-    # Class attribute: shared by ALL students
+    # Class attribute shared by ALL students
     school_name = "Akiba Academy"
 
     def __init__(self, name, score, department):
-        # Instance attributes: different for each student
+        # Instance attributes different for each student
         self.name = name
         self.score = score
         self.department = department
