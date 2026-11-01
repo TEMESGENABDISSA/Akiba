@@ -51,3 +51,46 @@ print()
 print("Rectangle 2")
 print("Area", rect2.area())
 print("Perimeter", rect2.perimeter())
+
+#  Student Score Management
+
+class Student:
+    # Class attribute: shared by ALL students
+    school_name = "Akiba Academy"
+
+    def __init__(self, name, score, department):
+        # Instance attributes: different for each student
+        self.name = name
+        self.score = score
+        self.department = department
+
+    def display(self):
+        print("School:", Student.school_name)
+        print("Name:", self.name)
+        print("Score:", self.score)
+        print("Department:", self.department)
+        print()
+
+
+# Create three students
+student1 = Student("Abel", 85, "Computer Science")
+student2 = Student("Selam", 90, "Software Engineering")
+student3 = Student("Daniel", 70, "Information Systems")
+
+# Update the score of one student
+student1.score = 95
+
+# Display all students only Abel's score changed
+student1.display()
+student2.display()
+student3.display()
+
+# Answers
+# 1 A class attribute (school_name) belongs to the class and is shared by all
+#    objects. If it changes, every student sees the change. An instance
+#    attribute (name, score, department) belongs to one object only, so each
+#    student has their own value.
+#
+# 2 Each student object stores its own score. When we write student1.score = 95,
+#    only student1's score changes. student2 and student3 are separate objects
+#    in memory, so their scores stay the same
