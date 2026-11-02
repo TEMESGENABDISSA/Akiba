@@ -87,10 +87,47 @@ student3.display()
 
 # Answers
 # 1 A class attribute (school_name) belongs to the class and is shared by all
-#    objects. If it changes, every student sees the change. An instance
+#    objects. If it changes, every student sees the change An instance
 #    attribute (name, score, department) belongs to one object only, so each
-#    student has their own value.
+#    student has their own value
 #
 # 2 Each student object stores its own score. When we write student1.score = 95,
-#    only student1's score changes. student2 and student3 are separate objects
+#    only student1's score changes student2 and student3 are separate objects
 #    in memory, so their scores stay the same
+
+
+
+
+# Task 4: Product Information System
+
+class Product:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+    def __str__(self):
+        return f"Product: {self.name}, Price: {self.price} birr, Quantity: {self.quantity}"
+
+    def total_value(self):
+        return self.price * self.quantity
+
+product1 = Product("Laptop", 45000, 3)
+product2 = Product("Phone", 15000, 5)
+product3 = Product("Notebook", 50, 100)
+
+# Print each object directly
+print(product1)
+print(product2)
+print(product3)
+print()
+
+print("Laptop total value:", product1.total_value())
+print("Phone total value:", product2.total_value())
+print("Notebook total value:", product3.total_value())
+print()
+
+# Answer:
+# The __str__() method tells Python how to turn an object into readable text.
+# Without it, print(product1) shows something unreadable like
+# <__main__.Product object at 0x000001>. With it, print() shows the product's
+# name, price and quantity in a clear sentence.
